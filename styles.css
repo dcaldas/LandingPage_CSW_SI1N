@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: #2a1a1a; /* Cor de fundo do corpo */
+  color: #1d1915; /* Cor padrão do texto */
+  line-height: 1.5;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #1D2B45; /* Fundo do header */
+  color: #DBD2D0; /* Cor do texto no header */
+  padding: 8px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+img.foto-perfil {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #495C38; /* Borda da foto de perfil */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: #d1e2c5; /* Cor dos links no menu */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #447073; /* Hover nos links */
+  text-shadow: 0 0 8px rgba(68, 112, 115, 0.8);
+}
+
+section {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 40px;
+  background-color: #DBD2D0; /* Cor de fundo das sections */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  color: #517432; /* Títulos principais */
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  color: #1e407e; /* Subtítulos */
+  font-size: 28px;
+  font-weight: 600;
+  margin: 30px 0 15px;
+}
+
+footer {
+  background-color: #1D2B45; /* Cor de fundo do footer */
+  color: #DBD2D0; /* Cor do texto no footer */
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #447073;  /* Cor do borda no footer */
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.column {
+  flex: 1 1 calc(50% - 20px);
+  padding: 20px;
+  background-color: #1D2B45;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.column:hover {
+  transform: translateY(-10px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+  border: 1px solid #DBD2D0;
+  border-radius: 5px;
+}
+
+th, td {
+  background-color: #d6cac7; /* Cor de fundo das tabelas */
+  padding: 15px;
+  text-align: left;
+  font-size: 18px;
+}
+
+th {
+  background-color: #447073; /* Cabeçalhos das tabelas */
+  color: #DBD2D0;
+  font-size: 20px;
+}
+
+form {
+  background-color: #d6cac7; /* Cor de fundo do formulário */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #DBD2D0; /* Cor da borda dos inputs */
+  border-radius: 8px;
+  font-size: 18px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #447073;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  background-color: #517432; /* Cor do botão */
+  color: #DBD2D0;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #447073;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}
